@@ -186,6 +186,12 @@ export const CanvasBadgeRenderer: React.FC<CanvasBadgeRendererProps> = ({
         ctx.font = 'bold 18px JetBrains Mono';
         ctx.textBaseline = 'alphabetic';
         ctx.fillText('#FrameInGoa', centerX, currentTextY);
+        // --- Small Team Credit ---
+        ctx.fillStyle = '#b9caca';
+        ctx.font = '12px JetBrains Mono';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'alphabetic';
+        ctx.fillText('team: Avirath, Hima', centerX, currentTextY + 25);
 
       } else {
         // --- FORMAT B: BUILDER ID CARD ---
