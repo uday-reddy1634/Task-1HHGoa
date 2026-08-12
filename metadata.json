@@ -1,0 +1,6 @@
+{
+  "name": "HH Goa 2026 Hacker ID Generator",
+  "description": "Official HH Goa 2026 Hacker Identity generator. Create cyberpunk PFP frames and Builder ID cards with custom photo, handle, role, and stack details, download HD PNGs, and flex in the community gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
