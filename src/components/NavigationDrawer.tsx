@@ -91,27 +91,6 @@ export const NavigationDrawer: React.FC<NavigationDrawerProps> = ({
               Preview & Assets
             </button>
           </div>
-
-          {/* Event Details Box */}
-          <div className="p-4 rounded-xl glass-panel border border-white/10 space-y-3">
-            <div className="flex items-center gap-2 text-xs font-mono text-[#00f5ff]">
-              <span className="w-2 h-2 rounded-full bg-[#00f5ff] animate-ping" />
-              EVENT SPECIFICATIONS
-            </div>
-            <div className="text-xs space-y-1 text-[#b9caca] font-mono">
-              <p><strong className="text-white">Location:</strong> Cyber Beach, Goa, India</p>
-              <p><strong className="text-white">Dates:</strong> November 14 - 20, 2026</p>
-              <p><strong className="text-white">Format:</strong> 48hr Non-stop Hack + Residency</p>
-            </div>
-            <div className="pt-2 border-t border-white/10 flex gap-2">
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-[#00f5ff]/10 text-[#00f5ff] border border-[#00f5ff]/30">
-                #HHGoa2026
-              </span>
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-[#e10181]/10 text-[#ffb0cb] border border-[#e10181]/30">
-                #BuilderInGoa
-              </span>
-            </div>
-          </div>
         </div>
 
         {/* Footer */}

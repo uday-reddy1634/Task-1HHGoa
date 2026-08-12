@@ -56,18 +56,6 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
         </span>
         <span className="font-mono text-xs font-medium">Preview</span>
       </button>
-
-      {onOpenShareModal && (
-        <button
-          onClick={onOpenShareModal}
-          className="flex flex-col items-center justify-center p-2 rounded-xl transition-all text-[#b9caca] hover:text-white"
-        >
-          <span className="material-symbols-outlined mb-0.5 text-2xl">
-            share
-          </span>
-          <span className="font-mono text-xs font-medium">Share</span>
-        </button>
-      )}
     </nav>
   );
 };
