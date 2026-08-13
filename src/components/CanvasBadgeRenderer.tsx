@@ -186,12 +186,15 @@ export const CanvasBadgeRenderer: React.FC<CanvasBadgeRendererProps> = ({
         ctx.font = 'bold 18px JetBrains Mono';
         ctx.textBaseline = 'alphabetic';
         ctx.fillText('#FrameInGoa', centerX, currentTextY);
-        // --- Team Credit (Side-by-side & slightly larger) ---
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 16px JetBrains Mono';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'alphabetic';
-        ctx.fillText('TEAM: AVIRATH V PAWAR | HIMA BV', centerX, currentTextY + 28);
+
+        // --- Dynamic Team Credit (Format A) ---
+        if (badge.team) {
+          ctx.fillStyle = '#ffffff';
+          ctx.font = 'bold 16px JetBrains Mono';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'alphabetic';
+          ctx.fillText(badge.team.toUpperCase(), centerX, currentTextY + 28);
+        }
 
       } else {
         // --- FORMAT B: BUILDER ID CARD ---
@@ -286,6 +289,15 @@ export const CanvasBadgeRenderer: React.FC<CanvasBadgeRendererProps> = ({
         ctx.font = 'bold 22px JetBrains Mono';
         ctx.textBaseline = 'alphabetic';
         ctx.fillText('#FramedInGoa', cardX + 50, cardY + cardH - 45);
+
+        // --- Dynamic Team Credit (Format B) ---
+        if (badge.team) {
+          ctx.fillStyle = '#ffffff';
+          ctx.font = 'bold 16px JetBrains Mono';
+          ctx.textAlign = 'right';
+          ctx.textBaseline = 'alphabetic';
+          ctx.fillText(badge.team.toUpperCase(), cardX + cardW - 50, cardY + cardH - 45);
+        }
 
         ctx.restore();
 

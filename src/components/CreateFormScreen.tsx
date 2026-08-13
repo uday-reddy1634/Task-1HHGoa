@@ -52,7 +52,7 @@ export const CreateFormScreen: React.FC<CreateFormScreenProps> = ({
   };
 
   return (
-      <main className="grow flex flex-col items-center justify-center p-4 md:p-8 w-full max-w-3xl mx-auto pt-20 pb-28 md:pb-16">      <div className="w-full glass-panel rounded-2xl p-6 md:p-10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] border border-white/10 my-4">
+      <main className="grow flex flex-col items-center justify-center p-4 md:p-8 w-full max-w-3xl mx-auto pt-20 pb-28 md:pb-16">     <div className="w-full glass-panel rounded-2xl p-6 md:p-10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] border border-white/10 my-4">
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="font-display font-extrabold text-2xl md:text-4xl text-[#e9feff] mb-2 tracking-tight">
@@ -186,6 +186,21 @@ export const CreateFormScreen: React.FC<CreateFormScreenProps> = ({
               className="glass-input w-full rounded-xl px-4 py-3.5 text-white font-body placeholder-[#b9caca]/40"
             />
           </div>
+
+          {/* Team Name */}
+          <div>
+            <label className="block font-mono text-xs text-[#00f5ff] uppercase tracking-widest font-semibold mb-2">
+              TEAM NAME
+            </label>
+            <input
+              type="text"
+              value={badge.team || ''}
+              onChange={(e) => setBadge((prev) => ({ ...prev, team: e.target.value }))}
+              placeholder="e.g. JANE DOE | JOHN DOE"
+              className="glass-input w-full rounded-xl px-4 py-3.5 text-white font-body placeholder-[#b9caca]/40"
+            />
+          </div>
+
           {/* Action Button */}
           <div className="pt-4">
             <button

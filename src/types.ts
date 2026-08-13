@@ -13,6 +13,7 @@ export interface HackerBadgeData {
   photoUrl: string;
   format: HackerBadgeFormat;
   createdAt: number;
+  team?: string;
   likesCount: number;
   verified: boolean;
 }
